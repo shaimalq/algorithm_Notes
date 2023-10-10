@@ -1,0 +1,25 @@
+algorithme notes
+variables
+	tableau n(10):entier
+	        n:entier
+		i:entier
+		S,M:reel
+debut
+	pour i<--- 0 a 9 pas 1 faire
+			ecrire("donner la note de l'etudiant",i+1,":")
+			lire(n(i))
+		fin pour
+		S <-- 0
+		pour i<--- 0 a 9 pas 1 faire
+			S <--- S + n(i)
+		fin pour
+		M <--- S /10
+		n <--- 0
+		pour i<--- 0 a 9 pas 1 faire
+			si n(i) > M alors
+			n <--- n + 1
+		 fin si
+		fin pour
+			
+		ecrire("le nombre des notes superieur a la moyenne de la classe est:"n)
+fin
